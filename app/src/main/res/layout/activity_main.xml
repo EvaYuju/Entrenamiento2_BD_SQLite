@@ -6,36 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/txtViewNombre"
+
+    <EditText
+        android:id="@+id/Nombre"
         android:layout_width="189dp"
         android:layout_height="48dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="52dp"
         android:hint="@string/hint_nombre"
-        android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textViewID"
+
+    <EditText
+        android:id="@+id/Codigo"
         android:layout_width="187dp"
         android:layout_height="48dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="20dp"
         android:hint="@string/hint_codigo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewEdad" />
+        app:layout_constraintTop_toBottomOf="@+id/Edad" />
 
-    <TextView
-        android:id="@+id/textViewEdad"
+    <EditText
+        android:id="@+id/Edad"
         android:layout_width="187dp"
         android:layout_height="48dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="20dp"
         android:hint="@string/hint_edad"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtViewNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/Nombre" />
 
     <TextView
         android:id="@+id/Lista"
@@ -54,7 +55,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="@string/btnDelete"
-        android:onClick="Delete"
         app:layout_constraintStart_toEndOf="@+id/btnUpdate"
         app:layout_constraintTop_toBottomOf="@+id/btnRead" />
 
@@ -65,9 +65,8 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="28dp"
         android:text="@string/btnInsert"
-        android:onClick="Insert"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewID" />
+        app:layout_constraintTop_toBottomOf="@+id/Codigo" />
 
     <Button
         android:id="@+id/btnRead"
@@ -76,9 +75,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:text="@string/btnRead"
-        android:onClick="Read"
         app:layout_constraintStart_toEndOf="@+id/btnInsert"
-        app:layout_constraintTop_toBottomOf="@+id/textViewID" />
+        app:layout_constraintTop_toBottomOf="@+id/Codigo" />
 
     <Button
         android:id="@+id/btnUpdate"
@@ -87,8 +85,8 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="8dp"
         android:text="@string/btnUpdate"
-        android:onClick="Update"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnInsert" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

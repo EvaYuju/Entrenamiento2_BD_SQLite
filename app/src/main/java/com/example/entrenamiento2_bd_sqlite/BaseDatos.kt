@@ -18,8 +18,8 @@ class BaseDatos(contexto: Context):SQLiteOpenHelper(contexto, BD,null,1) {
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-        TODO("Not yet implemented")
     }
+
     // CRUD
     // INSERT
     fun insertarDatos(usuario: Usuario):String{
