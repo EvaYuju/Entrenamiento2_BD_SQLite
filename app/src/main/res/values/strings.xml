@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Entrenamiento2_BD_SQLite</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_edad">Edad</string>
+    <string name="hint_codigo">Código</string>
+    <string name="txtListar">Aquí van los datos</string>
+    <string name="btnInsert">GUARDAR</string>
+    <string name="btnUpdate">ACTUALIZAR</string>
+    <string name="btnDelete">BORRAR</string>
+    <string name="btnRead">LEER</string>
+
 </resources>
